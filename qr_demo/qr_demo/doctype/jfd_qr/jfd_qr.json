@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:inv",
+ "creation": "2023-12-07 23:56:09.621618",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sys_id",
+  "inv",
+  "ammount",
+  "total",
+  "inv_tax",
+  "inv_tax_no",
+  "qr_value",
+  "qr_code",
+  "qr_image",
+  "key"
+ ],
+ "fields": [
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Small Text",
+   "label": "QR Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_image",
+   "fieldtype": "Image",
+   "label": "QR Image",
+   "options": "qr_code"
+  },
+  {
+   "fieldname": "inv",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "SUPP_INV_NO",
+   "unique": 1
+  },
+  {
+   "bold": 1,
+   "default": "VISION",
+   "fieldname": "sys_id",
+   "fieldtype": "Data",
+   "label": "SYSTEM IDENTIFICATION",
+   "length": 6,
+   "read_only": 1
+  },
+  {
+   "fieldname": "ammount",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "AMMOUNT_BEFORE_TAX"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "TOTAL_INVOICE_AMMOUNT"
+  },
+  {
+   "fieldname": "inv_tax",
+   "fieldtype": "Data",
+   "label": "INV_TAX_AMMOUNT"
+  },
+  {
+   "fieldname": "inv_tax_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "INV_TAX_NO"
+  },
+  {
+   "fieldname": "qr_value",
+   "fieldtype": "Data",
+   "label": "QR Value",
+   "read_only": 1
+  },
+  {
+   "fieldname": "key",
+   "fieldtype": "Data",
+   "label": "ENCRIPTION KEY",
+   "length": 16,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-10 23:42:08.506042",
+ "modified_by": "Administrator",
+ "module": "QR Demo",
+ "name": "JFD QR",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
