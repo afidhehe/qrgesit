@@ -34,10 +34,7 @@
    "fieldname": "qr_image",
    "fieldtype": "Image",
    "label": "QR Image",
-   "max_height": "1px",
-   "options": "qr_code",
-   "print_width": "1px",
-   "width": "1px"
+   "options": "qr_code"
   },
   {
    "fieldname": "inv",
@@ -110,7 +107,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-22 16:53:52.270377",
+ "modified": "2023-12-22 21:44:34.357167",
  "modified_by": "Administrator",
  "module": "QR Demo",
  "name": "JFD QR",
@@ -126,6 +123,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "QR User",
    "share": 1,
    "write": 1
   }
