@@ -27,15 +27,19 @@
    "read_only": 1
   },
   {
+   "columns": 1,
    "fieldname": "qr_image",
    "fieldtype": "Image",
    "label": "QR Image",
-   "options": "qr_code"
+   "max_height": "2px",
+   "options": "qr_code",
+   "print_width": "1",
+   "width": "2px"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-26 13:18:52.039227",
+ "modified": "2023-12-22 10:42:34.933261",
  "modified_by": "Administrator",
  "module": "QR Demo",
  "name": "QR Demo",

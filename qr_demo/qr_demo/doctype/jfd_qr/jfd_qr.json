@@ -1,7 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "field:inv",
+ "autoname": "autoincrement",
  "creation": "2023-12-07 23:56:09.621618",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,20 +8,25 @@
  "engine": "InnoDB",
  "field_order": [
   "sys_id",
+  "key",
+  "column_break_yonvs",
   "inv",
+  "inv_tax_no",
+  "column_break_shsdl",
   "ammount",
   "total",
   "inv_tax",
-  "inv_tax_no",
-  "qr_value",
+  "column_break_eroee",
   "qr_code",
   "qr_image",
-  "key"
+  "section_break_lzhyp",
+  "plain"
  ],
  "fields": [
   {
    "fieldname": "qr_code",
    "fieldtype": "Small Text",
+   "hidden": 1,
    "label": "QR Code",
    "read_only": 1
   },
@@ -53,19 +57,13 @@
   {
    "fieldname": "ammount",
    "fieldtype": "Data",
-   "in_filter": 1,
    "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "AMMOUNT_BEFORE_TAX"
   },
   {
    "fieldname": "total",
    "fieldtype": "Data",
-   "in_filter": 1,
    "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "TOTAL_INVOICE_AMMOUNT"
   },
   {
@@ -76,17 +74,7 @@
   {
    "fieldname": "inv_tax_no",
    "fieldtype": "Data",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "INV_TAX_NO"
-  },
-  {
-   "fieldname": "qr_value",
-   "fieldtype": "Data",
-   "label": "QR Value",
-   "read_only": 1
   },
   {
    "fieldname": "key",
@@ -94,15 +82,37 @@
    "label": "ENCRIPTION KEY",
    "length": 16,
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yonvs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_shsdl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_eroee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lzhyp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plain",
+   "fieldtype": "Small Text",
+   "label": "QR Value",
+   "length": 300
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-10 23:42:08.506042",
+ "modified": "2023-12-22 15:45:33.897649",
  "modified_by": "Administrator",
  "module": "QR Demo",
  "name": "JFD QR",
- "naming_rule": "By fieldname",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
