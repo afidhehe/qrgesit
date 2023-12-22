@@ -5,7 +5,7 @@ import qrcode
 
 
 def get_qr_code(data: str) -> str:
-	qr_code_bytes = get_qr_code_bytes(data, format="PNG", box_size=3, border=4)
+	qr_code_bytes = get_qr_code_bytes(data, format="PNG")
 	base_64_string = bytes_to_base64_string(qr_code_bytes)
 
 	return add_file_info(base_64_string)

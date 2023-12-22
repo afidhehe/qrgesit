@@ -34,7 +34,10 @@
    "fieldname": "qr_image",
    "fieldtype": "Image",
    "label": "QR Image",
-   "options": "qr_code"
+   "max_height": "1px",
+   "options": "qr_code",
+   "print_width": "1px",
+   "width": "1px"
   },
   {
    "fieldname": "inv",
@@ -42,8 +45,7 @@
    "in_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "SUPP_INV_NO",
-   "unique": 1
+   "label": "SUPP_INV_NO"
   },
   {
    "bold": 1,
@@ -108,7 +110,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-22 15:45:33.897649",
+ "modified": "2023-12-22 16:53:52.270377",
  "modified_by": "Administrator",
  "module": "QR Demo",
  "name": "JFD QR",
