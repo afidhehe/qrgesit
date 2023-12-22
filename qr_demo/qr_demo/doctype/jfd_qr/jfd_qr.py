@@ -6,8 +6,13 @@
 from frappe.model.document import Document
 
 from qr_demo.qr_code import get_qr_code
-
+from qr_demo.encrypt import encrypt_text
 
 class JFDQR(Document):
 	def validate(self):
-		self.qr_code = get_qr_code(self.plain)
+		secret_key = self.key  # 128-bit key
+		iv = bytes([0] * 16)  # 16 bytes IV
+		input_text = self.plain
+		encrypted_text = encrypt_text(input_text, secret_key, iv)
+		#generate and display QR
+		self.qr_code = get_qr_code(encrypted_text)
